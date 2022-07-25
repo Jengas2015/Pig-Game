@@ -85,7 +85,7 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
         
     // Check if player won the game
     if (scores[activePlayer] >= winningScore) {
-        document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
+        document.querySelector('#name-' + activePlayer).textContent = 'You won! Press New Game to restart!';
         document.querySelector('.dice').style.display = 'none';
         document.querySelector('.dice2').style.display = 'none';
         document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
